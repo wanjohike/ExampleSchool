@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student Management System</h1>
+    </header>
+    <main>
+        <section>
+            <h2>User Roles</h2>
+            <ul>
+                <li>
+                    <h3>Admin</h3>
+                    <p>Manage users, courses, subjects, attendance, and feedback.</p>
+                    <a href="{% url 'admin_login' %}">Login as Admin</a>
+                </li>
+                <li>
+                    <h3>Teacher</h3>
+                    <p>Mark attendance, manage grades, upload course materials, and send feedback.</p>
+                    <a href="{% url 'teacher_login' %}">Login as Teacher</a>
+                </li>
+                <li>
+                    <h3>Student</h3>
+                    <p>Manage profile, enroll in courses, view attendance and grades, and send feedback.</p>
+                    <a href="{% url 'student_login' %}">Login as Student</a>
+                </li>
+                <li>
+                    <h3>Front Office</h3>
+                    <p>Register students, handle inquiries, schedule appointments, and send notifications.</p>
+                    <a href="{% url 'front_office_login' %}">Login as Front Office</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>About the System</h2>
+            <p>The Student Management System is built using Django, Pipenv, and MySQL to provide a robust and scalable solution for educational institutions. It supports multiple user roles with specific functionalities to ensure efficient management of student data and activities.</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, please contact our support team at <a href="mailto:support@example.com">support@example.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Student Management System</p>
+    </footer>
+</body>
+</html>
